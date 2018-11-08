@@ -1,0 +1,508 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		131FC888219340D5004BBB9B /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 131FC887219340D5004BBB9B /* CustomTextField.swift */; };
+		131FC88E21935512004BBB9B /* RealmCustomer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 131FC88D21935512004BBB9B /* RealmCustomer.swift */; };
+		131FC89021935537004BBB9B /* RealmCustomerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 131FC88F21935537004BBB9B /* RealmCustomerType.swift */; };
+		131FC8922193555B004BBB9B /* CustomerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 131FC8912193555B004BBB9B /* CustomerType.swift */; };
+		131FC89421935586004BBB9B /* RealmHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 131FC89321935586004BBB9B /* RealmHelper.swift */; };
+		131FC8972193B547004BBB9B /* PickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 131FC8962193B547004BBB9B /* PickerView.swift */; };
+		13FE8FC02192F0A000424F2D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13FE8FBF2192F0A000424F2D /* AppDelegate.swift */; };
+		13FE8FC22192F0A000424F2D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13FE8FC12192F0A000424F2D /* MainViewController.swift */; };
+		13FE8FC52192F0A000424F2D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13FE8FC32192F0A000424F2D /* Main.storyboard */; };
+		13FE8FC72192F0A200424F2D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13FE8FC62192F0A200424F2D /* Assets.xcassets */; };
+		13FE8FCA2192F0A200424F2D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13FE8FC82192F0A200424F2D /* LaunchScreen.storyboard */; };
+		13FE8FD32192F28D00424F2D /* CustomerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13FE8FD22192F28D00424F2D /* CustomerTableViewCell.swift */; };
+		13FE8FD52192F42A00424F2D /* CustomerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13FE8FD42192F42A00424F2D /* CustomerViewController.swift */; };
+		13FE8FD72192F54E00424F2D /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13FE8FD62192F54E00424F2D /* BaseViewController.swift */; };
+		13FE8FDD2192F75D00424F2D /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13FE8FD92192F75D00424F2D /* RealmSwift.framework */; };
+		13FE8FDE2192F75D00424F2D /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13FE8FDA2192F75D00424F2D /* Realm.framework */; };
+		13FE8FDF2192F75D00424F2D /* IQKeyboardManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13FE8FDB2192F75D00424F2D /* IQKeyboardManager.framework */; };
+		13FE8FE02192F75D00424F2D /* IQKeyboardManagerSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13FE8FDC2192F75D00424F2D /* IQKeyboardManagerSwift.framework */; };
+		13FE8FE32192F7A600424F2D /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13FE8FE22192F7A600424F2D /* Customer.swift */; };
+		13FE8FE52192FB8400424F2D /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13FE8FE42192FB8400424F2D /* Extensions.swift */; };
+		13FE8FE72193015700424F2D /* AlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13FE8FE62193015700424F2D /* AlertController.swift */; };
+		13FE8FEB2193061800424F2D /* PickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13FE8FE92193061800424F2D /* PickerViewController.swift */; };
+		13FE8FEC2193061800424F2D /* PickerViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13FE8FEA2193061800424F2D /* PickerViewController.storyboard */; };
+		13FE8FEE21930DF300424F2D /* CustomerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13FE8FED21930DF300424F2D /* CustomerTableViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		131FC887219340D5004BBB9B /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		131FC88D21935512004BBB9B /* RealmCustomer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmCustomer.swift; sourceTree = "<group>"; };
+		131FC88F21935537004BBB9B /* RealmCustomerType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmCustomerType.swift; sourceTree = "<group>"; };
+		131FC8912193555B004BBB9B /* CustomerType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerType.swift; sourceTree = "<group>"; };
+		131FC89321935586004BBB9B /* RealmHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmHelper.swift; sourceTree = "<group>"; };
+		131FC8962193B547004BBB9B /* PickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerView.swift; sourceTree = "<group>"; };
+		13FE8FBC2192F0A000424F2D /* VNPT2018.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VNPT2018.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13FE8FBF2192F0A000424F2D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		13FE8FC12192F0A000424F2D /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		13FE8FC42192F0A000424F2D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		13FE8FC62192F0A200424F2D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		13FE8FC92192F0A200424F2D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		13FE8FCB2192F0A200424F2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		13FE8FD22192F28D00424F2D /* CustomerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerTableViewCell.swift; sourceTree = "<group>"; };
+		13FE8FD42192F42A00424F2D /* CustomerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerViewController.swift; sourceTree = "<group>"; };
+		13FE8FD62192F54E00424F2D /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		13FE8FD92192F75D00424F2D /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
+		13FE8FDA2192F75D00424F2D /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
+		13FE8FDB2192F75D00424F2D /* IQKeyboardManager.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IQKeyboardManager.framework; path = Carthage/Build/iOS/IQKeyboardManager.framework; sourceTree = "<group>"; };
+		13FE8FDC2192F75D00424F2D /* IQKeyboardManagerSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IQKeyboardManagerSwift.framework; path = Carthage/Build/iOS/IQKeyboardManagerSwift.framework; sourceTree = "<group>"; };
+		13FE8FE22192F7A600424F2D /* Customer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
+		13FE8FE42192FB8400424F2D /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		13FE8FE62193015700424F2D /* AlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertController.swift; sourceTree = "<group>"; };
+		13FE8FE92193061800424F2D /* PickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickerViewController.swift; sourceTree = "<group>"; };
+		13FE8FEA2193061800424F2D /* PickerViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PickerViewController.storyboard; sourceTree = "<group>"; };
+		13FE8FED21930DF300424F2D /* CustomerTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerTableViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		13FE8FB92192F0A000424F2D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13FE8FDD2192F75D00424F2D /* RealmSwift.framework in Frameworks */,
+				13FE8FDE2192F75D00424F2D /* Realm.framework in Frameworks */,
+				13FE8FDF2192F75D00424F2D /* IQKeyboardManager.framework in Frameworks */,
+				13FE8FE02192F75D00424F2D /* IQKeyboardManagerSwift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		131FC8892193549D004BBB9B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				13FE8FE82193061800424F2D /* Components */,
+				13FE8FD62192F54E00424F2D /* BaseViewController.swift */,
+				13FE8FE62193015700424F2D /* AlertController.swift */,
+				13FE8FC12192F0A000424F2D /* MainViewController.swift */,
+				13FE8FD42192F42A00424F2D /* CustomerViewController.swift */,
+				13FE8FED21930DF300424F2D /* CustomerTableViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		131FC88A219354BB004BBB9B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				13FE8FD22192F28D00424F2D /* CustomerTableViewCell.swift */,
+				131FC887219340D5004BBB9B /* CustomTextField.swift */,
+				131FC8962193B547004BBB9B /* PickerView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		131FC88B219354CA004BBB9B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				131FC895219355A5004BBB9B /* Realm */,
+				13FE8FE22192F7A600424F2D /* Customer.swift */,
+				131FC8912193555B004BBB9B /* CustomerType.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		131FC88C219354D2004BBB9B /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				13FE8FE42192FB8400424F2D /* Extensions.swift */,
+				131FC89321935586004BBB9B /* RealmHelper.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		131FC895219355A5004BBB9B /* Realm */ = {
+			isa = PBXGroup;
+			children = (
+				131FC88D21935512004BBB9B /* RealmCustomer.swift */,
+				131FC88F21935537004BBB9B /* RealmCustomerType.swift */,
+			);
+			path = Realm;
+			sourceTree = "<group>";
+		};
+		13FE8FB32192F0A000424F2D = {
+			isa = PBXGroup;
+			children = (
+				13FE8FBE2192F0A000424F2D /* VNPT2018 */,
+				13FE8FBD2192F0A000424F2D /* Products */,
+				13FE8FD82192F75C00424F2D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		13FE8FBD2192F0A000424F2D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				13FE8FBC2192F0A000424F2D /* VNPT2018.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		13FE8FBE2192F0A000424F2D /* VNPT2018 */ = {
+			isa = PBXGroup;
+			children = (
+				13FE8FBF2192F0A000424F2D /* AppDelegate.swift */,
+				131FC8892193549D004BBB9B /* Controller */,
+				131FC88A219354BB004BBB9B /* View */,
+				131FC88B219354CA004BBB9B /* Model */,
+				131FC88C219354D2004BBB9B /* Utility */,
+				13FE8FC32192F0A000424F2D /* Main.storyboard */,
+				13FE8FC62192F0A200424F2D /* Assets.xcassets */,
+				13FE8FC82192F0A200424F2D /* LaunchScreen.storyboard */,
+				13FE8FCB2192F0A200424F2D /* Info.plist */,
+			);
+			path = VNPT2018;
+			sourceTree = "<group>";
+		};
+		13FE8FD82192F75C00424F2D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				13FE8FDB2192F75D00424F2D /* IQKeyboardManager.framework */,
+				13FE8FDC2192F75D00424F2D /* IQKeyboardManagerSwift.framework */,
+				13FE8FDA2192F75D00424F2D /* Realm.framework */,
+				13FE8FD92192F75D00424F2D /* RealmSwift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		13FE8FE82193061800424F2D /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				13FE8FE92193061800424F2D /* PickerViewController.swift */,
+				13FE8FEA2193061800424F2D /* PickerViewController.storyboard */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		13FE8FBB2192F0A000424F2D /* VNPT2018 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13FE8FCE2192F0A200424F2D /* Build configuration list for PBXNativeTarget "VNPT2018" */;
+			buildPhases = (
+				13FE8FB82192F0A000424F2D /* Sources */,
+				13FE8FB92192F0A000424F2D /* Frameworks */,
+				13FE8FBA2192F0A000424F2D /* Resources */,
+				13FE8FE12192F77200424F2D /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VNPT2018;
+			productName = VNPT2018;
+			productReference = 13FE8FBC2192F0A000424F2D /* VNPT2018.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		13FE8FB42192F0A000424F2D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = MonstarLab;
+				TargetAttributes = {
+					13FE8FBB2192F0A000424F2D = {
+						CreatedOnToolsVersion = 10.0;
+					};
+				};
+			};
+			buildConfigurationList = 13FE8FB72192F0A000424F2D /* Build configuration list for PBXProject "VNPT2018" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 13FE8FB32192F0A000424F2D;
+			productRefGroup = 13FE8FBD2192F0A000424F2D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				13FE8FBB2192F0A000424F2D /* VNPT2018 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		13FE8FBA2192F0A000424F2D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13FE8FCA2192F0A200424F2D /* LaunchScreen.storyboard in Resources */,
+				13FE8FC72192F0A200424F2D /* Assets.xcassets in Resources */,
+				13FE8FC52192F0A000424F2D /* Main.storyboard in Resources */,
+				13FE8FEC2193061800424F2D /* PickerViewController.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		13FE8FE12192F77200424F2D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/IQKeyboardManagerSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/IQKeyboardManager.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RealmSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Realm.framework",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		13FE8FB82192F0A000424F2D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13FE8FD72192F54E00424F2D /* BaseViewController.swift in Sources */,
+				131FC89421935586004BBB9B /* RealmHelper.swift in Sources */,
+				131FC888219340D5004BBB9B /* CustomTextField.swift in Sources */,
+				13FE8FD52192F42A00424F2D /* CustomerViewController.swift in Sources */,
+				131FC8972193B547004BBB9B /* PickerView.swift in Sources */,
+				13FE8FC22192F0A000424F2D /* MainViewController.swift in Sources */,
+				13FE8FEB2193061800424F2D /* PickerViewController.swift in Sources */,
+				131FC88E21935512004BBB9B /* RealmCustomer.swift in Sources */,
+				13FE8FE32192F7A600424F2D /* Customer.swift in Sources */,
+				13FE8FEE21930DF300424F2D /* CustomerTableViewController.swift in Sources */,
+				13FE8FE72193015700424F2D /* AlertController.swift in Sources */,
+				131FC8922193555B004BBB9B /* CustomerType.swift in Sources */,
+				13FE8FC02192F0A000424F2D /* AppDelegate.swift in Sources */,
+				13FE8FD32192F28D00424F2D /* CustomerTableViewCell.swift in Sources */,
+				131FC89021935537004BBB9B /* RealmCustomerType.swift in Sources */,
+				13FE8FE52192FB8400424F2D /* Extensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		13FE8FC32192F0A000424F2D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				13FE8FC42192F0A000424F2D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		13FE8FC82192F0A200424F2D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				13FE8FC92192F0A200424F2D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		13FE8FCC2192F0A200424F2D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		13FE8FCD2192F0A200424F2D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		13FE8FCF2192F0A200424F2D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DAB2NZFLN5;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = VNPT2018/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.xerox.VNPT2018;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		13FE8FD02192F0A200424F2D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DAB2NZFLN5;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = VNPT2018/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.xerox.VNPT2018;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		13FE8FB72192F0A000424F2D /* Build configuration list for PBXProject "VNPT2018" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13FE8FCC2192F0A200424F2D /* Debug */,
+				13FE8FCD2192F0A200424F2D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		13FE8FCE2192F0A200424F2D /* Build configuration list for PBXNativeTarget "VNPT2018" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13FE8FCF2192F0A200424F2D /* Debug */,
+				13FE8FD02192F0A200424F2D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 13FE8FB42192F0A000424F2D /* Project object */;
+}
