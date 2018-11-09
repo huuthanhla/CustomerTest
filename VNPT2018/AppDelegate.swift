@@ -18,8 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         if RealmHelper.getAllTypes().count == 0 {
             let types = (1...10).map { (id) -> RealmCustomerType in
-                let aType = CustomerType(id: id, name: "Loại khách hàng \(id)")
-                return RealmCustomerType(aType)
+                return RealmCustomerType(CustomerType(id: UUID().uuidString, name: "Loại khách hàng \(id)"))
             }
             RealmHelper.insert(type: types)
         }

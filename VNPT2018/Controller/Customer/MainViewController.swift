@@ -20,24 +20,35 @@ class MainViewController: BaseViewController {
         fetchData()
     }
     
-    fileprivate func fetchData() {
+    fileprivate func fetchData(animation: UITableView.RowAnimation = .fade) {
         customerArray = RealmHelper.getAllCustomers()
-        tableView.reloadSections(IndexSet(integer: 0), with: .fade)
-        title = customerArray.count > 0
-            ? "Danh sách  \(customerArray.count)  khách hàng"
-            : "Danh sách khách hàng"
+        tableView.reloadSections(IndexSet(integer: 0), with: animation)
+        title = "Khách hàng"
     }
 }
 
 extension MainViewController {
     func setupRightBarButton() {
         let add = UIBarButtonItem(image: UIImage(named: "Add"), style: .plain, target: self, action: #selector(self.addCustomer(_:)))
-        add.tintColor = .white
-        navigationItem.rightBarButtonItem = add
+        let setting = UIBarButtonItem(image: UIImage(named: "setting"), style: .plain, target: self, action: #selector(self.setting(_:)))
+        let search = UIBarButtonItem(barButtonSystemItem: .search, target: self, action: #selector(self.search(_:)))
+        
+        [setting, add, search].forEach({ $0.tintColor = .white })
+        navigationItem.rightBarButtonItems = [setting, add]
+        navigationItem.leftBarButtonItem = search
+    }
+    
+    @objc func setting(_ sender: UIBarButtonItem) {
+        guard let typeVC = storyboard?.instantiateViewController(withIdentifier: String(describing: TypesViewController.self)) as? TypesViewController else { return }
+        navigationController?.pushViewController(typeVC, animated: true)
     }
     
     @objc func addCustomer(_ sender: UIBarButtonItem) {
         pushToCustomerVC(customer: Customer(blank: true))
+    }
+    
+    @objc func search(_ sender: UIBarButtonItem) {
+        
     }
     
     fileprivate func pushToCustomerVC(state: CustomerViewController.State = .create, customer: Customer? = nil) {
@@ -99,7 +110,7 @@ extension MainViewController: UITableViewDelegate {
         AlertController.shared.showConfirmMessage(title: "Xác nhận", message: "Xóa khách hàng [\(customer.name)]?") { confirm in
             guard confirm else { return }
             RealmHelper.deleteCustomer(id: customer.id)
-            self.fetchData()
+            self.fetchData(animation: .automatic)
         }
     }
 }

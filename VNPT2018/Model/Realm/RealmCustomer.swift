@@ -15,7 +15,7 @@ class RealmCustomer: Object {
     @objc dynamic var address: String = ""
     @objc dynamic var birthday: String = ""
     @objc dynamic var phone: String = ""
-    @objc dynamic var type: Int = 0
+    @objc dynamic var type: String = ""
     
     override static func primaryKey() -> String? {
         return "id"

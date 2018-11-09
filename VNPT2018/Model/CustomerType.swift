@@ -9,8 +9,22 @@
 import Foundation
 
 struct CustomerType {
-    var id: Int
+    var id: String
     var name: String
+    
+    init(id: String, name: String) {
+        self.id = id
+        self.name = name
+    }
+    
+    init(realm: RealmCustomerType) {
+        id = realm.id
+        name = realm.name
+    }
+    
+    var realmType: RealmCustomerType {
+        return RealmCustomerType(self)
+    }
     
     func save() {
         RealmHelper.insert(type: [RealmCustomerType(self)])

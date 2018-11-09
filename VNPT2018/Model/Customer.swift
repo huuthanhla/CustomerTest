@@ -14,7 +14,7 @@ struct Customer {
     var address: String = ""
     var birthday: String = ""
     var phone: String = ""
-    var type: Int = 0
+    var type: String = ""
     
     init(id: String = String.random(length: 16), blank: Bool = false) {
         self.id = id.uppercased()
@@ -23,7 +23,7 @@ struct Customer {
         
         name = String.random(length: 16)
         address = String.random(length: 20)
-        type = Int.random(1, max: 5)
+        type = String.random(length: 16)
         phone = String.random(length: 10, charset: "0123456789")
     }
     
@@ -48,6 +48,6 @@ struct Customer {
     }
     
     var isValid: Bool {
-        return !id.isEmpty && !name.isEmpty && !address.isEmpty && !birthday.isEmpty && !phone.isEmpty && type > 0
+        return !id.isEmpty && !name.isEmpty && !address.isEmpty && !birthday.isEmpty && !phone.isEmpty && !type.isEmpty
     }
 }

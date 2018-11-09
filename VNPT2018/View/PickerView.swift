@@ -12,7 +12,7 @@ protocol PickerViewDelegate: class {
     func selected(data: PickerData)
 }
 
-typealias PickerData = (name: String, value: Int)
+typealias PickerData = (name: String, value: String)
 
 class PickerView: UIView {
     var pickerView: UIPickerView!

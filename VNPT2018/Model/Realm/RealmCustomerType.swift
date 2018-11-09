@@ -10,7 +10,7 @@ import Foundation
 import RealmSwift
 
 class RealmCustomerType: Object {
-    @objc dynamic var id: Int = 0
+    @objc dynamic var id: String = ""
     @objc dynamic var name: String = ""
     
     override static func primaryKey() -> String? {
@@ -21,5 +21,9 @@ class RealmCustomerType: Object {
         self.init()
         self.id = type.id
         self.name = type.name
+    }
+    
+    var customerType: CustomerType {
+        return CustomerType(realm: self)
     }
 }

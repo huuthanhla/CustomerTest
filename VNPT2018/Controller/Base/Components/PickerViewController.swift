@@ -18,7 +18,7 @@ class PickerViewController: UIViewController {
     var values: [PickerData] = []
     var selectedIndex = 0
     
-    typealias pickerHandler = (Int) -> Void
+    typealias pickerHandler = (String) -> Void
     var doneHandler: pickerHandler?
     
     override func viewDidLoad() {

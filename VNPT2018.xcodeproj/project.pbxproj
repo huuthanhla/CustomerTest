@@ -13,6 +13,10 @@
 		131FC8922193555B004BBB9B /* CustomerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 131FC8912193555B004BBB9B /* CustomerType.swift */; };
 		131FC89421935586004BBB9B /* RealmHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 131FC89321935586004BBB9B /* RealmHelper.swift */; };
 		131FC8972193B547004BBB9B /* PickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 131FC8962193B547004BBB9B /* PickerView.swift */; };
+		13B341D6219553CB00207056 /* TypesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B341D5219553CB00207056 /* TypesViewController.swift */; };
+		13B341D82195551A00207056 /* TypeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B341D72195551A00207056 /* TypeTableViewCell.swift */; };
+		13B341DA219555A000207056 /* EditTypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B341D9219555A000207056 /* EditTypeViewController.swift */; };
+		13B341DC219555AF00207056 /* EditTypeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B341DB219555AF00207056 /* EditTypeTableViewController.swift */; };
 		13FE8FC02192F0A000424F2D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13FE8FBF2192F0A000424F2D /* AppDelegate.swift */; };
 		13FE8FC22192F0A000424F2D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13FE8FC12192F0A000424F2D /* MainViewController.swift */; };
 		13FE8FC52192F0A000424F2D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13FE8FC32192F0A000424F2D /* Main.storyboard */; };
@@ -40,6 +44,10 @@
 		131FC8912193555B004BBB9B /* CustomerType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerType.swift; sourceTree = "<group>"; };
 		131FC89321935586004BBB9B /* RealmHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmHelper.swift; sourceTree = "<group>"; };
 		131FC8962193B547004BBB9B /* PickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerView.swift; sourceTree = "<group>"; };
+		13B341D5219553CB00207056 /* TypesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypesViewController.swift; sourceTree = "<group>"; };
+		13B341D72195551A00207056 /* TypeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeTableViewCell.swift; sourceTree = "<group>"; };
+		13B341D9219555A000207056 /* EditTypeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTypeViewController.swift; sourceTree = "<group>"; };
+		13B341DB219555AF00207056 /* EditTypeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTypeTableViewController.swift; sourceTree = "<group>"; };
 		13FE8FBC2192F0A000424F2D /* VNPT2018.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VNPT2018.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13FE8FBF2192F0A000424F2D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		13FE8FC12192F0A000424F2D /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -80,12 +88,9 @@
 		131FC8892193549D004BBB9B /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				13FE8FE82193061800424F2D /* Components */,
-				13FE8FD62192F54E00424F2D /* BaseViewController.swift */,
-				13FE8FE62193015700424F2D /* AlertController.swift */,
-				13FE8FC12192F0A000424F2D /* MainViewController.swift */,
-				13FE8FD42192F42A00424F2D /* CustomerViewController.swift */,
-				13FE8FED21930DF300424F2D /* CustomerTableViewController.swift */,
+				13B341DD21955E4500207056 /* Base */,
+				13B341DE21955E8200207056 /* Customer */,
+				13B341DF21955E9100207056 /* Type */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -94,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				13FE8FD22192F28D00424F2D /* CustomerTableViewCell.swift */,
+				13B341D72195551A00207056 /* TypeTableViewCell.swift */,
 				131FC887219340D5004BBB9B /* CustomTextField.swift */,
 				131FC8962193B547004BBB9B /* PickerView.swift */,
 			);
@@ -126,6 +132,36 @@
 				131FC88F21935537004BBB9B /* RealmCustomerType.swift */,
 			);
 			path = Realm;
+			sourceTree = "<group>";
+		};
+		13B341DD21955E4500207056 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				13FE8FE82193061800424F2D /* Components */,
+				13FE8FD62192F54E00424F2D /* BaseViewController.swift */,
+				13FE8FE62193015700424F2D /* AlertController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		13B341DE21955E8200207056 /* Customer */ = {
+			isa = PBXGroup;
+			children = (
+				13FE8FC12192F0A000424F2D /* MainViewController.swift */,
+				13FE8FD42192F42A00424F2D /* CustomerViewController.swift */,
+				13FE8FED21930DF300424F2D /* CustomerTableViewController.swift */,
+			);
+			path = Customer;
+			sourceTree = "<group>";
+		};
+		13B341DF21955E9100207056 /* Type */ = {
+			isa = PBXGroup;
+			children = (
+				13B341D5219553CB00207056 /* TypesViewController.swift */,
+				13B341D9219555A000207056 /* EditTypeViewController.swift */,
+				13B341DB219555AF00207056 /* EditTypeTableViewController.swift */,
+			);
+			path = Type;
 			sourceTree = "<group>";
 		};
 		13FE8FB32192F0A000424F2D = {
@@ -279,6 +315,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				13FE8FD72192F54E00424F2D /* BaseViewController.swift in Sources */,
+				13B341DC219555AF00207056 /* EditTypeTableViewController.swift in Sources */,
 				131FC89421935586004BBB9B /* RealmHelper.swift in Sources */,
 				131FC888219340D5004BBB9B /* CustomTextField.swift in Sources */,
 				13FE8FD52192F42A00424F2D /* CustomerViewController.swift in Sources */,
@@ -290,9 +327,12 @@
 				13FE8FEE21930DF300424F2D /* CustomerTableViewController.swift in Sources */,
 				13FE8FE72193015700424F2D /* AlertController.swift in Sources */,
 				131FC8922193555B004BBB9B /* CustomerType.swift in Sources */,
+				13B341DA219555A000207056 /* EditTypeViewController.swift in Sources */,
 				13FE8FC02192F0A000424F2D /* AppDelegate.swift in Sources */,
+				13B341D82195551A00207056 /* TypeTableViewCell.swift in Sources */,
 				13FE8FD32192F28D00424F2D /* CustomerTableViewCell.swift in Sources */,
 				131FC89021935537004BBB9B /* RealmCustomerType.swift in Sources */,
+				13B341D6219553CB00207056 /* TypesViewController.swift in Sources */,
 				13FE8FE52192FB8400424F2D /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

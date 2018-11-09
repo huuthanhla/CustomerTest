@@ -64,7 +64,7 @@ class RealmHelper {
         }
     }
     
-    static func getType(by id: Int) -> RealmCustomerType? {
+    static func getType(by id: String) -> RealmCustomerType? {
         do {
             let realm = try Realm()
             return realm.object(ofType: RealmCustomerType.self, forPrimaryKey: id)
@@ -77,10 +77,27 @@ class RealmHelper {
     static func getAllTypes() -> [RealmCustomerType] {
         do {
             let realm = try Realm()
-            return realm.objects(RealmCustomerType.self).toArray()
+            return realm.objects(RealmCustomerType.self)
+                .sorted(byKeyPath: "name", ascending: true)
+                .toArray()
         } catch {
             print("error: \(error)")
             return []
+        }
+    }
+    
+    static func deleteType(id: String) {
+        do {
+            let realm = try Realm()
+            
+            guard let record = realm.object(ofType: RealmCustomerType.self, forPrimaryKey: id) else { return }
+            
+            try realm.write {
+                realm.delete(record)
+            }
+            print("deleted Type `\(id)`")
+        } catch {
+            print("error: \(error)")
         }
     }
 }
